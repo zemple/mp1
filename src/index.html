@@ -1,13 +1,185 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>MP1</title>
-    </head>
-    <body>
-        <h1>Hello World! Welcome to MP1!</h1>
-        <img src="assets/image.jpg">
-    </body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A one-page field guide to the Arctic.">
+    <title>Northbound | An Arctic Field Guide</title>
+  </head>
+  <body>
+    <nav class="navbar" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Northbound home">
+        <span class="icon icon--compass" aria-hidden="true"></span>
+        <span>NORTHBOUND</span>
+      </a>
+      <div class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#habitat">Habitat</a>
+        <a href="#wildlife">Wildlife</a>
+        <a href="#field-notes">Field notes</a>
+        <a href="#watch">Watch</a>
+      </div>
+    </nav>
+
+    <header id="home" class="hero page-section">
+      <div class="hero__content reveal">
+        <p class="eyebrow">66° 33′ north</p>
+        <h1>Life at the edge<br>of the map.</h1>
+        <p class="hero__copy">A compact field guide to the wildlife, landscapes, and quiet wonder of the Arctic.</p>
+        <a class="button" href="#habitat">Begin the journey <span aria-hidden="true">↓</span></a>
+      </div>
+      <p class="hero__coordinate" aria-hidden="true">ARCTIC CIRCLE · 24 HOURS OF DAYLIGHT</p>
+    </header>
+
+    <main>
+      <section id="habitat" class="habitat page-section section-pad">
+        <div class="section-inner habitat__grid reveal">
+          <div>
+            <p class="eyebrow">01 · Habitat</p>
+            <h2>Built by ice,<br>shaped by light.</h2>
+          </div>
+          <div class="habitat__copy">
+            <p class="lead">The Arctic is not one empty expanse. Sea ice, tundra, coastal cliffs, and open water form a connected living system.</p>
+            <p>Each season redraws the map. Winter locks the ocean in ice; summer opens narrow passages and brings a rush of migrating life.</p>
+            <div class="stat-row" aria-label="Arctic facts">
+              <div><strong>24h</strong><span>summer sun</span></div>
+              <div><strong>14M</strong><span>square kilometers</span></div>
+              <div><strong>4M</strong><span>people call it home</span></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="wildlife" class="wildlife page-section section-pad">
+        <div class="section-inner reveal">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">02 · Wildlife</p>
+              <h2>Meet the specialists.</h2>
+            </div>
+            <p>Every resident has evolved a precise answer to cold, distance, and seasonal change.</p>
+          </div>
+
+          <div class="carousel" aria-roledescription="carousel" aria-label="Arctic wildlife">
+            <div class="carousel__track">
+              <article class="slide slide--bear" aria-label="1 of 3">
+                <div class="slide__number">01</div>
+                <div class="slide__content">
+                  <p class="eyebrow">Sea ice traveler</p>
+                  <h3>Polar bear</h3>
+                  <p>Wide paws spread weight across thin ice and work like paddles in open water.</p>
+                </div>
+              </article>
+              <article class="slide slide--fox" aria-label="2 of 3" aria-hidden="true">
+                <div class="slide__number">02</div>
+                <div class="slide__content">
+                  <p class="eyebrow">Seasonal shapeshifter</p>
+                  <h3>Arctic fox</h3>
+                  <p>A dense coat changes color with the landscape, creating camouflage year-round.</p>
+                </div>
+              </article>
+              <article class="slide slide--whale" aria-label="3 of 3" aria-hidden="true">
+                <div class="slide__number">03</div>
+                <div class="slide__content">
+                  <p class="eyebrow">Ocean navigator</p>
+                  <h3>Bowhead whale</h3>
+                  <p>A powerful skull breaks breathing holes through ice during long migrations.</p>
+                </div>
+              </article>
+            </div>
+            <button class="carousel__arrow carousel__arrow--prev" type="button" aria-label="Previous animal">←</button>
+            <button class="carousel__arrow carousel__arrow--next" type="button" aria-label="Next animal">→</button>
+            <div class="carousel__dots" role="tablist" aria-label="Choose a slide">
+              <button class="is-active" type="button" aria-label="Show polar bear" aria-selected="true"></button>
+              <button type="button" aria-label="Show Arctic fox" aria-selected="false"></button>
+              <button type="button" aria-label="Show bowhead whale" aria-selected="false"></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="field-notes" class="notes page-section section-pad">
+        <div class="section-inner reveal">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">03 · Field notes</p>
+              <h2>Look closer.</h2>
+            </div>
+            <p>Three small details reveal how this vast ecosystem works.</p>
+          </div>
+          <div class="note-grid">
+            <article class="note-card">
+              <span class="icon icon--snow" aria-hidden="true"></span>
+              <p class="eyebrow">Weather</p>
+              <h3>Snow is shelter</h3>
+              <p>Air pockets make deep snow an effective winter blanket for small animals.</p>
+              <button class="text-button" type="button" data-modal="snow">Read field note <span aria-hidden="true">↗</span></button>
+            </article>
+            <article class="note-card">
+              <span class="icon icon--sun" aria-hidden="true"></span>
+              <p class="eyebrow">Light</p>
+              <h3>The long day</h3>
+              <p>Continuous summer light triggers a brief, intense season of growth.</p>
+              <button class="text-button" type="button" data-modal="light">Read field note <span aria-hidden="true">↗</span></button>
+            </article>
+            <article class="note-card">
+              <span class="icon icon--wave" aria-hidden="true"></span>
+              <p class="eyebrow">Ocean</p>
+              <h3>Life below ice</h3>
+              <p>Algae beneath sea ice forms the first link in a rich marine food web.</p>
+              <button class="text-button" type="button" data-modal="ocean">Read field note <span aria-hidden="true">↗</span></button>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="interlude" aria-label="Polar landscape">
+        <div class="interlude__content reveal">
+          <p class="eyebrow">A landscape in motion</p>
+          <p>Nothing here stands still.</p>
+        </div>
+      </section>
+
+      <section id="watch" class="watch page-section section-pad">
+        <div class="section-inner watch__grid reveal">
+          <div>
+            <p class="eyebrow">04 · Watch</p>
+            <h2>A quiet<br>encounter.</h2>
+            <p>Pause with one of the Arctic's most recognizable residents. Use the video controls to play or revisit the scene.</p>
+          </div>
+          <video controls muted loop playsinline preload="metadata" poster="assets/image.jpg">
+            <source src="assets/arctic.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+          </video>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="section-inner footer__inner">
+        <div>
+          <a class="brand" href="#home">
+            <span class="icon icon--compass" aria-hidden="true"></span>
+            <span>NORTHBOUND</span>
+          </a>
+          <p>A small field guide to a very large place.</p>
+        </div>
+        <div class="socials" aria-label="Social links">
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram"><span class="social-icon social-icon--instagram" aria-hidden="true"></span></a>
+          <a href="https://x.com/" target="_blank" rel="noreferrer" aria-label="X"><span class="social-icon social-icon--x" aria-hidden="true"></span></a>
+          <a href="https://github.com/" target="_blank" rel="noreferrer" aria-label="GitHub"><span class="social-icon social-icon--github" aria-hidden="true"></span></a>
+        </div>
+        <p class="footer__small">Designed for CS 409 · 2026</p>
+      </div>
+    </footer>
+
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-describedby="modal-copy" aria-hidden="true">
+      <div class="modal__panel">
+        <button class="modal__close" type="button" aria-label="Close field note">×</button>
+        <p class="eyebrow">Field note</p>
+        <h2 id="modal-title"></h2>
+        <p id="modal-copy"></p>
+      </div>
+    </div>
+  </body>
 </html>
